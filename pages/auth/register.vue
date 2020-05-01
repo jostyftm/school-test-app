@@ -9,12 +9,16 @@
     <!-- Step controls -->
     <div class="w-full flex justify-between px-4">
       <button
+        v-if="step > 1 && step < 4"
         class="px-4 py-2 rounded-full bg-gray-300 active:bg-gray-500 focus:outline-none"
+        @click="goPrevStep"
       >
         Atras
       </button>
       <button
+        v-if="step < 4"
         class="px-4 py-2 rounded-full bg-gray-300 active:bg-gray-500 focus:outline-none"
+        @click="goNextStep"
       >
         Continuar
       </button>
@@ -37,7 +41,15 @@ export default {
   },
   data() {
     return {
-      step: 4
+      step: 1
+    }
+  },
+  methods: {
+    goNextStep() {
+      this.step++
+    },
+    goPrevStep() {
+      this.step--
     }
   }
 }

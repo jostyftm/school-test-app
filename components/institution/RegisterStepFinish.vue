@@ -8,5 +8,11 @@
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
       aspernatur fugit corrupti velit harum dolore impedit molestias est?
     </p>
+    <nuxt-link
+      :to="{ name: 'auth-login' }"
+      class="block text-center my-4 w-full px-4 py-2 rounded-full bg-gray-300 active:bg-gray-500 focus:outline-none"
+    >
+      Iniciar sesión
+    </nuxt-link>
   </div>
 </template>

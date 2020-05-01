@@ -9,5 +9,9 @@ body {
 }
 
 p {
-  @apply text-sm
+  @apply text-sm;
+}
+
+table th, table td {
+  @apply whitespace-no-wrap;
 }
