@@ -14,9 +14,9 @@
     </div>
     <!-- Content -->
     <div
-      class="bg-white border border-gray-500 shadow rounded-lg py-2 overflow-auto"
+      class="bg-white border border-gray-300 shadow-sm rounded-lg py-2 overflow-auto"
     >
-      <div class="p-2 font-semibold text-gray-900">
+      <div class="p-4 font-semibold text-gray-900">
         <h3>Titulo del panel</h3>
       </div>
       <table class="w-full">
